@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Shehacks</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        font-family: Tahoma;
+      }
+
+      .bgim {
+        height: 100vh;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url(bg.jpg);
+        background-position: center;
+        background-size: cover;
+        overflow-x: hidden;
+        position: relative;
+      }
+
+      .nav-bar {
+        display: flex;
+        padding: 40px 120px;
+      }
+
+      .nav-logo img {
+        width: 90px;
+      }
+
+      .nav-links {
+        flex: 1;
+      }
+
+      .nav-links ul {
+        margin-left: 50px;
+        display: inline;
+        float: right;
+      }
+      .nav-links ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px 25px;
+      }
+      .nav-links ul a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .nav-links ul li::after {
+        content: "";
+        width: 0;
+        height: 2px;
+        background: yellow;
+        display: block;
+        margin: auto;
+      }
+
+      .nav-links ul li:hover::after {
+        width: 100%;
+      }
+
+      .banner-title {
+        margin: 50px 130px;
+        color: #fff;
+      }
+      .banner-title h1 {
+        font-size: 50px;
+        margin-bottom: 0px;
+        text-align: center;
+      }
+
+      .banner-title h1 span {
+        color: white;
+      }
+
+      .banner-img img {
+        align-content: center;
+      }
+      .About-Us {
+        font-size: 30px;
+        margin-bottom: 0px;
+        text-align: center;
+        color: yellow;
+        text-decoration: underline;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        position: relative;
+        width: 1100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px;
+      }
+      h1 {
+        font-size: 30px;
+        margin-bottom: 0px;
+        text-align: center;
+        color: yellow;
+        text-decoration: underline;
+      }
+
+      h2 {
+        font-size: 22px;
+        margin: 0px;
+        text-decoration: underline;
+        padding: 0px;
+      }
+      h3 {
+        font-size: 15px;
+        margin: 0px;
+      }
+      h4 {
+        margin: 0px;
+        padding: 0px;
+        font-size: 20px;
+      }
+      p {
+        font-weight: bold;
+        margin: 5px;
+      }
+      .container .card {
+        position: relative;
+        max-width: 300px;
+        height: 220px;
+        background: #fff;
+        margin: 30px 10px;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+        transition: 0.3s ease-in-out;
+      }
+
+      .container .card:hover {
+        height: 500px;
+      }
+
+      .container .card .imgBx {
+        position: relative;
+        width: 260px;
+        height: 260px;
+        top: -60px;
+        left: 0px;
+        z-index: 1;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .container .card .imgBx img {
+        max-width: 100%;
+        border-radius: 4px;
+      }
+
+      .container .card .content {
+        position: relative;
+        margin-top: -140px;
+        padding: 10px 15px;
+        text-align: center;
+        color: black;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+      }
+
+      .container .card:hover .content {
+        visibility: visible;
+        opacity: 1;
+        margin-top: -40px;
+        transition-delay: 0.3s;
+      }
+
+      .msson {
+        text-align: center;
+        font-size: 20px;
+      }
+      .msson h1 {
+        font-size: 30px;
+      }
+      .msson p {
+        color: whitesmoke;
+      }
+
+      .footer {
+        margin: 20px;
+        text-align: center;
+        color: whitesmoke;
+      }
+
+      .footer img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+
+      .footer p {
+        text-align: center;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bgim">
+      <!--nav-->
+      <div class="nav-bar">
+        <div class="nav-logo">
+          <img src="images.jpeg" />
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Why did..</a></li>
+            <li><a href="#">Expectations</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="banner-title">
+        <h1>OUR VISION FOR <span>SHEHACKS</span></h1>
+      </div>
+      <div class="banner-img">
+        <center>
+          <img src="three-girls.png" alt="" />
+        </center>
+      </div>
+
+      <div class="About-Us">
+        <h1>MEMBERS</h1>
+      </div>
+      <center>
+        <div class="container">
+          <div class="card">
+            <div class="imgBx">
+              <img src="icon.jpg" />
+            </div>
+            <div class="content">
+              <h2>MEMBER 1 - FASNA</h2>
+              <h3>IES COLLEGE OF ENGINEERING</h3>
+              <h4>My Vision</h4>
+              <p>
+                To make complete use of this great oppurtunity and build a good
+                skillset. I would also like to improve my communication and
+                ability to work and collaborate together as a team.<br />I also
+                wish to develop beneficialtechnical skills which are imperative
+                for a successful career.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="imgBx">
+              <img src="icon.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h2>MEMBER 2- JAREESHA MUMTHAZ PP</h2>
+              <h3>IES COLLEGE OF ENGINEERING</h3>
+              <h4>My Vision</h4>
+              <p>
+                I want to learn more about technology.And achieve some skills
+                from this program.I'am really interested to in studying new
+                programming languages.<br />I hope this program will help me to
+                get some basic idea in programming.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="imgBx">
+              <img src="icon.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h2>MEMBER 3- NIHALA KP</h2>
+              <h3>IES COLLEGE OF ENGINEERING</h3>
+              <h4>My Vision</h4>
+              <p>
+                I think this program will provide us inclusive learning
+                environments and will teach us to use emerOging technologies.We
+                can have effective practices to empower our team members and
+                continually improve the quality of our project.Irecognize this
+                as a chance to acces online learning at one of it's best form.
+              </p>
+            </div>
+          </div>
+        </div>
+      </center>
+
+      <div class="msson">
+        <h1 class="msson">OUR MISSION</h1>
+
+        <p>
+          Our main aim is to learn new skills , improve our knowledge and aquire
+          expertise<br />
+          in the alloted stack.We also look forward to the successful
+          completion<br />
+          of the program and attain improved understanding of the language
+          through building a project.
+        </p>
+
+        <h1>WHY DID WE JOIN??</h1>
+        <p>
+          We are well versed with the fact that there is a huge gender gap in
+          thetechnical field.<br />The proportion of womenin tech is less
+          compared to men.<br />Through this program women get a platform to
+          explore their ideas and areas of interests. So as women who ch<br />ose
+          the technical field we expect to do some amazing projects and improve
+          our technical skills.
+        </p>
+
+        <h1>EXPECTATIONS!!!</h1>
+
+        <p>
+          A beginner friendly atmosphere where we can learn from the basics of a
+          stack.Substantial<br />
+          support from the mentor in building the project.A boost to our
+          communicative and technical skills.<br />Finally a beautifull
+          experience of building something a great project ourselves.
+        </p>
+      </div>
+
+      <div class="footer">
+        <p>
+          MAIL US
+          <a href="mailto:fasnaks101@gmal.com"><img src="mail.jpg" /></a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
